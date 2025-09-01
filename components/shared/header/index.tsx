@@ -1,9 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { APP_NAME } from '@/lib/contants';
-import { Button } from '@/components/ui/button';
-import { ShoppingCart, UserIcon } from 'lucide-react';
-import ModelToggle from './model-toggle';
+import Menu from './menu';
 const Header = () => {
   return (
     <header className="w-full border-b">
@@ -14,19 +12,7 @@ const Header = () => {
             <span className="lg:block font-bold text-2xl ml-3">{APP_NAME}</span>
           </Link>
         </div>
-        <div className="space-x-2">
-          <ModelToggle></ModelToggle>
-          <Button asChild variant="ghost">
-            <Link href="/cart">
-              <ShoppingCart></ShoppingCart> Cart
-            </Link>
-          </Button>
-          <Button asChild variant="ghost">
-            <Link href="/sign-in">
-              <UserIcon></UserIcon> Sign In
-            </Link>
-          </Button>
-        </div>
+        <Menu></Menu>
       </div>
     </header>
   );

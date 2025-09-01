@@ -1,0 +1,48 @@
+const sampleData = {
+  products: [
+    {
+      name: 'Polo Sporting Stretch Shirt',
+      slug: 'polo-sporting-stretch-shirt',
+      category: "Men's Dress Shirts",
+      description: 'Classic Polo style with modern comfort. Made with stretch fabric for enhanced mobility and all-day comfort.',
+      images: ['/images/sample-products/bag.png'],
+      price: '59.99',
+      brand: 'Polo',
+      rating: '4.5',
+      numReviews: 10,
+      stock: 5,
+      isFeatured: true,
+      banner: 'banner-1.jpg',
+    },
+    {
+      name: 'Classic Oxford Button-Down',
+      slug: 'classic-oxford-button-down',
+      category: "Men's Dress Shirts",
+      description: 'Timeless Oxford cloth shirt with button-down collar. Perfect for business casual occasions.',
+      images: ['/images/sample-products/shoes.png'],
+      price: '64.99',
+      brand: 'Polo',
+      rating: '4.3',
+      numReviews: 8,
+      stock: 12,
+      isFeatured: false,
+      banner: '',
+    },
+    {
+      name: 'Linen Blend Dress Shirt',
+      slug: 'linen-blend-dress-shirt',
+      category: "Men's Dress Shirts",
+      description: 'Breathable linen-cotton blend ideal for warm weather. Features a relaxed fit and casual elegance.',
+      images: ['/images/sample-products/watch.png'],
+      price: '69.99',
+      brand: 'Polo',
+      rating: '4.7',
+      numReviews: 15,
+      stock: 7,
+      isFeatured: true,
+      banner: 'banner-2.jpg',
+    },
+  ],
+};
+
+export default sampleData;
