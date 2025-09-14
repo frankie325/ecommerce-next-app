@@ -1,15 +1,12 @@
-import { Button } from '@/components/ui/button';
-import sampleData from '@/db/sample-data';
 import ProductList from '@/components/shared/product/product-list';
-
-const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+import { getLatestProducts } from '@/lib/actions/product';
 
 export default async function Home() {
-  await delay(1000);
+  const products = await getLatestProducts();
 
   return (
     <div>
-      <ProductList data={sampleData.products} title="Newest Arrivals" limit={4}></ProductList>
+      <ProductList data={products} title="Newest Arrivals"></ProductList>
     </div>
   );
 }
